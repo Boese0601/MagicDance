@@ -5,33 +5,33 @@
   <h2 align="center">MagicDance: Realistic Human Dance Video Generation<br>
   with Motions & Facial Expressions Transfer</h2>
   <p align="center">
-    <a href=""><strong>Di Chang</strong></a>
+    <a href="https://boese0601.github.io/"><strong>Di Chang</strong></a>
     ·  
-    <a href=""><strong>Yichun Shi</strong></a>
+    <a href="https://seasonsh.github.io/"><strong>Yichun Shi</strong></a>
     ·
-    <a href=""><strong>Quankai Gao</strong></a>
+    <a href="https://zerg-overmind.github.io/"><strong>Quankai Gao</strong></a>
     ·
-    <a href=""><strong>Jessica Fu</strong></a>
+    <a href="https://www.linkedin.com/in/jessica-fu-60a504254/"><strong>Jessica Fu</strong></a>
     ·
-    <a href=""><strong>Hongyi Xu</strong></a>
+    <a href="https://hongyixu37.github.io/homepage/"><strong>Hongyi Xu</strong></a>
     ·
-    <br><a href=""><strong>Guoxian Song</strong></a>
+    <br><a href="https://guoxiansong.github.io/homepage/index.html"><strong>Guoxian Song</strong></a>
     ·  
-    <a href=""><strong>Qing Yan</strong></a>
+    <a href="https://scholar.google.com/citations?user=0TIYjPAAAAAJ&hl=en"><strong>Qing Yan</strong></a>
     ·
-    <a href=""><strong>Xiao Yang</strong></a>
+    <a href="https://scholar.google.com/citations?user=_MAKSLkAAAAJ&hl=en"><strong>Xiao Yang</strong></a>
     ·
-    <a href=""><strong>Mohammad Soleymani</strong></a>
+    <a href="https://www.ihp-lab.org/"><strong>Mohammad Soleymani</strong></a>
     ·
     <br>
-    <sup>1</sup>University of Southern California         <sup>2</sup>ByteDance Inc.
+    <sup>1</sup>University of Southern California &nbsp;&nbsp;&nbsp; <sup>2</sup>ByteDance Inc.
     <br>
     </br>
         <a href="">
-        <img src='https://img.shields.io/badge/arXiv-MagicEdit-blue' alt='Paper PDF'>
+        <img src='https://img.shields.io/badge/arXiv-MagicDance-red' alt='Paper PDF'>
         </a>
         <a href=''>
-        <img src='https://img.shields.io/badge/Project_Page-MagicEdit-red' alt='Project Page'></a>
+        <img src='https://img.shields.io/badge/Project_Page-MagicDance-purple' alt='Project Page'></a>
   </p>
   <div align="center">
     <img src="./figures/teaser.jpg">
