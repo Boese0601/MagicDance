@@ -38,8 +38,6 @@
   <div align="center">
     <video controls>
     <source src="./figures/teaser.mp4" type="video/mp4">
-<!--   </video>
-    <img src="./figures/teaser.mp4"> -->
     </video>
   </div>
 </p>
