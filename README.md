@@ -36,7 +36,10 @@
         <img src='https://img.shields.io/badge/YouTube-MagicDance-rgb(255, 0, 0)' alt='Youtube'></a>
   </p>
   <div align="center">
-    <img src="./figures/teaser.mp4">
+    <video controls>
+    <source src="./figures/teaser.mp4" type="video/mp4">
+<!--   </video>
+    <img src="./figures/teaser.mp4"> -->
     </video>
   </div>
 </p>
