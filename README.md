@@ -33,7 +33,7 @@
         <a href='https://boese0601.github.io/magicdance/'>
         <img src='https://img.shields.io/badge/Project_Page-MagicDance-blue' alt='Project Page'></a>
         <a href='https://boese0601.github.io/magicdance/'>
-        <img src='https://img.shields.io/badge/YouTube-MagicDance-#FF0000' alt='Youtube'></a>
+        <img src='https://img.shields.io/badge/YouTube-MagicDance-rgb(255, 0, 0)' alt='Youtube'></a>
   </p>
   <div align="center">
     <img src="./figures/teaser.jpg">
