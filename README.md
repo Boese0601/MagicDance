@@ -30,8 +30,11 @@
         <a href="">
         <img src='https://img.shields.io/badge/arXiv-MagicDance-red' alt='Paper PDF'>
         </a>
-        <a href=''>
+        <a href='https://boese0601.github.io/magicdance/'>
         <img src='https://img.shields.io/badge/Project_Page-MagicDance-blue' alt='Project Page'></a>
+        <a href='https://boese0601.github.io/magicdance/'>
+        <img src='https://img.shields.io/badge/YouTube-MagicDance-red' alt='Youtube'></a>
+
   </p>
   <div align="center">
     <img src="./figures/teaser.jpg">
