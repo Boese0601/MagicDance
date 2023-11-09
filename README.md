@@ -37,9 +37,8 @@
   </p>
     </p>
     
-<video>
-  <source src="./figures/teaser.mp4" type="video/mp4">
-</video>
+[![](https://res.cloudinary.com/marcomontalbano/image/upload/v1686644061/video_to_markdown/images/youtube--alJKsj3JpBo-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/alJKsj3JpBo "")
+
 
 *We propose MagicDance, a novel and effective approach to provide realistic human video generation enabling vivid motion and
 facial expression transfer, and consistent 2D cartoon-style animation zero-shot generation without any fine-tuning. Thanks to MagicDance,
