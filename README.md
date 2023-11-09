@@ -28,7 +28,7 @@
     <br>
     </br>
         <a href="">
-        <img src='https://img.shields.io/badge/arXiv-MagicDance-red' alt='Paper PDF'>
+        <img src='https://img.shields.io/badge/arXiv-MagicDance-green' alt='Paper PDF'>
         </a>
         <a href='https://boese0601.github.io/magicdance/'>
         <img src='https://img.shields.io/badge/Project_Page-MagicDance-blue' alt='Project Page'></a>
