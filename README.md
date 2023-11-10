@@ -37,7 +37,7 @@
   </p>
     </p>
     
-[![](https://res.cloudinary.com/marcomontalbano/image/upload/v1686644061/video_to_markdown/images/youtube--VPJe6TyrT-Y-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/VPJe6TyrT-Y "")
+[![]()](https://youtu.be/VPJe6TyrT-Y "")
 
 
 *We propose MagicDance, a novel and effective approach to provide realistic human video generation enabling vivid motion and
