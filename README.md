@@ -37,7 +37,6 @@
   </p>
     </p>
     
-[![]()] "")
 [![MagicDance: Realistic Human Dance Video Generation with Motions & Facial Expressions Transfer](http://img.youtube.com/vi/VPJe6TyrT-Y/0.jpg)]((https://youtu.be/VPJe6TyrT-Y "MagicDance: Realistic Human Dance Video Generation with Motions & Facial Expressions Transfer")
 
 *We propose MagicDance, a novel and effective approach to provide realistic human video generation enabling vivid motion and
