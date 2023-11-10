@@ -32,7 +32,7 @@
         </a>
         <a href='https://boese0601.github.io/magicdance/'>
         <img src='https://img.shields.io/badge/Project_Page-MagicDance-blue' alt='Project Page'></a>
-        <a href='https://boese0601.github.io/magicdance/'>
+        <a href='https://youtu.be/VPJe6TyrT-Y'>
         <img src='https://img.shields.io/badge/YouTube-MagicDance-rgb(255, 0, 0)' alt='Youtube'></a>
   </p>
     </p>
