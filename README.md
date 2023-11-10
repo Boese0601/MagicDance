@@ -36,8 +36,9 @@
         <img src='https://img.shields.io/badge/YouTube-MagicDance-rgb(255, 0, 0)' alt='Youtube'></a>
   </p>
     </p>
-    
+<center>
 [![MagicDance: Realistic Human Dance Video Generation with Motions & Facial Expressions Transfer](http://img.youtube.com/vi/VPJe6TyrT-Y/0.jpg)]((https://youtu.be/VPJe6TyrT-Y "MagicDance: Realistic Human Dance Video Generation with Motions & Facial Expressions Transfer")
+</center>
 
 *We propose MagicDance, a novel and effective approach to provide realistic human video generation enabling vivid motion and
 facial expression transfer, and consistent 2D cartoon-style animation zero-shot generation without any fine-tuning. Thanks to MagicDance,
