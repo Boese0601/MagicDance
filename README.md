@@ -37,7 +37,7 @@
   </p>
     </p>
 <div align="center">
-  <a href="https://youtu.be/VPJe6TyrT-Y"><img src=http://img.youtube.com/vi/VPJe6TyrT-Y/0.jpg" alt="MagicDance: Realistic Human Dance Video Generation with Motions & Facial Expressions Transfer"></a>
+  <a href="https://youtu.be/VPJe6TyrT-Y"><img src="http://img.youtube.com/vi/VPJe6TyrT-Y/0.jpg" alt="MagicDance: Realistic Human Dance Video Generation with Motions & Facial Expressions Transfer"></a>
 </div>
 
 *We propose MagicDance, a novel and effective approach to provide realistic human video generation enabling vivid motion and
