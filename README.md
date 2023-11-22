@@ -27,7 +27,7 @@
     <sup>1</sup>University of Southern California &nbsp;&nbsp;&nbsp; <sup>2</sup>ByteDance Inc.
     <br>
     </br>
-        <a href="">
+        <a href="https://arxiv.org/abs/2311.12052">
         <img src='https://img.shields.io/badge/arXiv-MagicDance-green' alt='Paper PDF'>
         </a>
         <a href='https://boese0601.github.io/magicdance/'>
