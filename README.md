@@ -52,6 +52,12 @@ original T2I model without modifying its pre-trained weight.*
 ## Citing
 If you find our work useful, please consider citing:
 ```BibTeX
-@inproceedings{
+@misc{chang2023magicdance,
+      title={MagicDance: Realistic Human Dance Video Generation with Motions & Facial Expressions Transfer}, 
+      author={Di Chang and Yichun Shi and Quankai Gao and Jessica Fu and Hongyi Xu and Guoxian Song and Qing Yan and Xiao Yang and Mohammad Soleymani},
+      year={2023},
+      eprint={2311.12052},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
 }
 ```
