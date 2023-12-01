@@ -61,3 +61,13 @@ If you find our work useful, please consider citing:
       primaryClass={cs.CV}
 }
 ```
+
+
+## Acknowledgments
+
+Our code follows several excellent repositories. We appreciate them for making their codes available to the public.
+
+* [DisCo](https://github.com/Wangt-CN/DisCo)
+* [AnimateDiff](https://github.com/guoyww/AnimateDiff)
+* [ControlNet](https://github.com/lllyasviel/ControlNet)
+
