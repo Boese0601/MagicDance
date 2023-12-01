@@ -65,7 +65,7 @@ If you find our work useful, please consider citing:
 
 ## Acknowledgments
 
-Our code follows several excellent repositories. We appreciate them for making their codes available to the public.
+Our code follows several excellent repositories. We appreciate them for making their codes available to the public. We also appreciate the help from [Tan Wang](https://github.com/Wangt-CN), who offered assistance to our baselines comparison experiment.
 
 * [DisCo](https://github.com/Wangt-CN/DisCo)
 * [AnimateDiff](https://github.com/guoyww/AnimateDiff)
