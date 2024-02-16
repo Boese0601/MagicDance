@@ -91,7 +91,14 @@ Inference with specific image and pose sequence:
 ```bash
 bash scripts/inference_any_image_pose.sh
 ```
-We offer some images and poses in "example_data", you can easily inference with your own image or pose sequence by replacing the arguments "local_cond_image_path" and "local_pose_path" in inference_any_image_pose.sh.
+We offer some images and poses in "example_data", you can easily inference with your own image or pose sequence by replacing the arguments "local_cond_image_path" and "local_pose_path" in inference_any_image_pose.sh. Some interesting outputs are shown below:
+<div align="center">
+  <img src="./figures/zeroshot_1.png" alt="MagicDance: Realistic Human Dance Video Generation with Motions & Facial Expressions Transfer">
+</div>
+Our model is also able to retarget the pose of generated image from T2I model.
+<div align="center">
+  <img src="./figures/zeroshot_2.png" alt="MagicDance: Realistic Human Dance Video Generation with Motions & Facial Expressions Transfer">
+</div>
 
 ## Training
 Appearance Control Pretraining:
