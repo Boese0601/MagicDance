@@ -167,22 +167,10 @@ utils/*.th
 model_lib/clip/*.pt 
 model_lib/t5/*.pth
 
-*.jpg
-*.zip
-*.pkl 
-*.csv 
-*.png 
-*.ckpt
-*.parquet 
 
 bg_real/
 test_bg*/
 
-misc_scripts/watermark/watermark_model.pt
-*.tar.gz
-
-model_lib/t5/t5_encoder_fp32
-model_lib/ul2/ul2_encoder_fp16
 
 laion_parquet_files/
 tmp_images/
@@ -192,21 +180,6 @@ test_sd_sampling/
 onnx/
 test_results/
 
-generated_images*
-benchmark_sd_drawbench*
-*.tar
-inpainting_*_onnx_op12*
-
-*.whl
-
-*.th
-*.onnx
-
-examples/
-openai/
-model_lib/ControlNet/annotator/ckpts
-model_lib/ControlNet/pretrained_weights
-misc_scripts/process_landmark.txt
 pretrained_weights/
 tiktok_test_log/
 tiktok_train_log/
