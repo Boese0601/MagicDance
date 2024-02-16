@@ -84,14 +84,16 @@ Inference on the test set:
 ```bash
 bash scripts/inference_tiktok_dataset.sh
 ```
-We use exactly same code from [DisCo](https://github.com/Wangt-CN/DisCo) for metrics evaluation.
-
+We use exactly same code from [DisCo](https://github.com/Wangt-CN/DisCo) for metrics evaluation. Some example outputs from our model are shown below:
+<div align="center">
+  <img src="./figures/tiktok.png" alt="MagicDance: Realistic Human Dance Video Generation with Motions & Facial Expressions Transfer">
+</div>
 
 Inference with specific image and pose sequence:
 ```bash
 bash scripts/inference_any_image_pose.sh
 ```
-We offer some images and poses in "example_data", you can easily inference with your own image or pose sequence by replacing the arguments "local_cond_image_path" and "local_pose_path" in inference_any_image_pose.sh. Some interesting outputs are shown below:
+We offer some images and poses in "example_data", you can easily inference with your own image or pose sequence by replacing the arguments "local_cond_image_path" and "local_pose_path" in inference_any_image_pose.sh. Some interesting outputs from out-of-domain images are shown below:
 <div align="center">
   <img src="./figures/zeroshot_1.png" alt="MagicDance: Realistic Human Dance Video Generation with Motions & Facial Expressions Transfer">
 </div>
