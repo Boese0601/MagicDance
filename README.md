@@ -40,25 +40,96 @@
   <a href="https://youtu.be/VPJe6TyrT-Y"><img src="./figures/video_play.png" alt="MagicDance: Realistic Human Dance Video Generation with Motions & Facial Expressions Transfer"></a>
 </div>
 
-*We propose MagicDance, a novel and effective approach to provide realistic human video generation enabling vivid motion and
-facial expression transfer, and consistent 2D cartoon-style animation zero-shot generation without any fine-tuning. Thanks to MagicDance,
-we can precisely generate appearance-consistent results, while the original T2I model (e.g., Stable Diffusion and ControlNet) can hardly
-maintain the subject identity information accurately. Furthermore, our proposed modules can be treated as an extension/plug-in to the
-original T2I model without modifying its pre-trained weight.*
+## News
+* **[2024.02.15]** Release training and inference code. 
+* **[2024.02.02]** Release updated paper - MagicPose. The method and data are exactly the same.
+* **[2023.11.18]** Release MagicDance paper and project page.
 
-<!-- *For avatar-centric video generation and animation, please also check our latest work <a href="">MagicAvatar</a>!* -->
 
- 
+## Related Open-Source Works
+
+* [Disco](https://arxiv.org/abs/2307.00040), from Microsoft
+* [MagicAnimate](https://arxiv.org/abs/2311.16498), from ByteDance - Singapore
+
+## Getting Started 
+For inference on TikTok dataset or your own image and poses, download our MagicDance [checkpoint](https://drive.google.com/drive/folders/1Ny5zkgo3aLVekCJTAga-D_XlMGpR1cj2?usp=sharing).
+
+For appearance control pretraining, please download the pretrained model for [StableDiffusion V1.5](https://huggingface.co/Boese0601/MagicDance/blob/main/control_sd15_ini.ckpt).
+
+For appearance-disentangled Pose Control, please download pretrained [Appearance Control Model](https://drive.google.com/file/d/1oGIxynPhluSjs2rycwQdK4sCx2W_81xE/view?usp=sharing) and pretrained [ControlNet OpenPose](https://huggingface.co/Boese0601/MagicDance/blob/main/control_v11p_sd15_openpose.pth).
+
+The pre-processed TikTok dataset can be downloaded from [here](https://drive.google.com/file/d/1jEK0YJ5AfZZuFNqGGqOtUPFx--TIebT9/view?usp=sharing). OpenPose may fail to detect human pose skeletons for some images, so we will filter those failure cases and train our model on clean data.
+
+Place the pretrained weights and dataset as following:
+```bash
+MagicDance
+|----TikTok-v4
+|----pretrained_weights
+  |----control_v11p_sd15_openpose.pth
+  |----control_sd15_ini.ckpt
+  |----model_state-110000.th
+  |----model_state-10000.th  
+|----...
+```
+
+## Environment
+The environment from my machine is `python==3.9`, `pytorch==1.13.1`, `CUDA==11.7`. You may use other version of these prerequisites according to your local environment.
+```bash
+conda env create -f environment.yaml
+conda activate magicpose
+```
+
+## Inference 
+Inference on the test set:
+```bash
+bash scripts/inference_tiktok_dataset.sh
+```
+We use exactly same code from [DisCo](https://github.com/Wangt-CN/DisCo) for metrics evaluation.
+
+
+Inference with specific image and pose sequence:
+```bash
+bash scripts/inference_any_image_pose.sh
+```
+We offer some images and poses in "example_data", you can easily inference with your own image or pose sequence by replacing the arguments "local_cond_image_path" and "local_pose_path" in inference_any_image_pose.sh.
+
+## Training
+Appearance Control Pretraining:
+```bash
+bash scripts/appearance_control_pretraining.sh
+```
+
+Appearance-Disentangled Pose Control:
+```bash
+bash scripts/appearance_disentangle_pose_control.sh
+```
+
+## Some tips
+### The task
+From our experiences with this project, this motion retargeting task is a data-hungry task. Generation result highly depends on the training data, e.g. the quality of pose tracker, the amount of video sequences and frames per video in your training data. You may consider adopt [DensePose](https://arxiv.org/abs/1802.00434) as in [MagicAnimate](https://arxiv.org/abs/2311.16498), [DWPose](https://github.com/IDEA-Research/DWPose) as in [Animate Anyone](https://arxiv.org/pdf/2311.17117.pdf) or any other geometry control for better generation quality. We have tried [MMPose](https://github.com/open-mmlab/mmpose) as well, which produced slightly better pose detection results. Introduce extra training data will yield better performance, consider using any other real-human dataset half-body/full-body dataset, e.g. [TaiChi](https://github.com/AliaksandrSiarohin/first-order-model)/[DeepFashion](https://mmlab.ie.cuhk.edu.hk/projects/DeepFashion.html), for further finetuning.
+
+### The code
+Most of the arguments are self-explanatory in the codes. Several key arguments are explained below.
+
+* `model_config` A relative or absolute folder path to the config file of your model architecture.
+* `img_bin_limit` The maximum step for randomly selecting source and target image during training. During inference, the value is set to be "all".
+* `control_mode` This argument controls the Image-CFG during inference. "controlnet_important" denotes Image-CFG is used and "balance" means not.
+* `wonoise` The reference image is fed into the appearance control model without adding noise.
+* `with_text` When "with_text" is given, text is **not** used for training. (I know it's a bit confusing, lol)
+* `finetune_control` Finetune Appearance Control Model (and Pose ControlNet).
+* `output_dir` A relative or absolute folder for writing checkpoints.
+* `local_image_dir` A relative or absolute folder  for writing image outputs.
+* `image_pretrain_dir` A relative or absolute folder for loading appearance control model checkpoint.
+* `pose_pretrain_dir` A relative or absolute path to pose controlnet.
+
 ## Citing
 If you find our work useful, please consider citing:
 ```BibTeX
-@misc{chang2023magicdance,
-      title={MagicDance: Realistic Human Dance Video Generation with Motions & Facial Expressions Transfer}, 
-      author={Di Chang and Yichun Shi and Quankai Gao and Jessica Fu and Hongyi Xu and Guoxian Song and Qing Yan and Xiao Yang and Mohammad Soleymani},
-      year={2023},
-      eprint={2311.12052},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@article{chang2023magicdance,
+  title={MagicDance: Realistic Human Dance Video Generation with Motions \& Facial Expressions Transfer},
+  author={Chang, Di and Shi, Yichun and Gao, Quankai and Fu, Jessica and Xu, Hongyi and Song, Guoxian and Yan, Qing and Yang, Xiao and Soleymani, Mohammad},
+  journal={arXiv preprint arXiv:2311.12052},
+  year={2023}
 }
 ```
 
