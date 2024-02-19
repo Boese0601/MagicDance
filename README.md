@@ -113,6 +113,38 @@ Appearance-Disentangled Pose Control:
 bash scripts/appearance_disentangle_pose_control.sh
 ```
 
+## Using your own video data for training 
+For training on your own dataset, you first need to run [openpose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) for your input images/videos and save the visualized pose map. Then, organize them as the format shown in the TikTok dataset. You can also refer to [ControlNet-OpenPose](https://github.com/lllyasviel/ControlNet-v1-1-nightly?tab=readme-ov-file#controlnet-11-openpose), we use exactly the same Pose ControlNet in our pipeline.
+Then set the path to your data in [dataset/tiktok_video_arnold_copy.py](https://github.com/Boese0601/MagicDance/blob/main/dataset/tiktok_video_arnold_copy.py#L287)
+
+```bash
+Your Dataset
+|----train_set
+  |----video_000
+    |----000.jpg
+    |----001.jpg
+    |----002.jpg
+    ...
+  |----video_001
+  |----video_002
+  ...
+|----pose_map_train_set
+  |----video_000
+    |----000.jpg
+    |----001.jpg
+    |----002.jpg
+    ...
+  |----video_001
+  |----video_002
+  ...
+|----val_set
+|----pose_map_val_set
+|----test_set
+|----pose_map_test_set
+|----...
+```
+
+
 ## Some tips
 ### The task
 From our experiences with this project, this motion retargeting task is a data-hungry task. Generation result highly depends on the training data, e.g. the quality of pose tracker, the amount of video sequences and frames per video in your training data. You may consider adopt [DensePose](https://arxiv.org/abs/1802.00434) as in [MagicAnimate](https://arxiv.org/abs/2311.16498), [DWPose](https://github.com/IDEA-Research/DWPose) as in [Animate Anyone](https://arxiv.org/pdf/2311.17117.pdf) or any other geometry control for better generation quality. We have tried [MMPose](https://github.com/open-mmlab/mmpose) as well, which produced slightly better pose detection results. Introduce extra training data will yield better performance, consider using any other real-human dataset half-body/full-body dataset, e.g. [TaiChi](https://github.com/AliaksandrSiarohin/first-order-model)/[DeepFashion](https://mmlab.ie.cuhk.edu.hk/projects/DeepFashion.html), for further finetuning.
