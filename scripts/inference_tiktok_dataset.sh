@@ -11,6 +11,6 @@ CUDA_VISIBLE_DEVICES=1 torchrun --master_port 10000 test_tiktok.py \
 --wonoise \
 --local_image_dir ./tiktok_test_log/image_log/magicdance \
 --local_log_dir ./tiktok_test_log/tb_log/magicdance \
---image_pretrain_dir ./pretrained_weighs/model_state-110000.th
+--image_pretrain_dir ./pretrained_weights/model_state-110000.th
 $@
 
