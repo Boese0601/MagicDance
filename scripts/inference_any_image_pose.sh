@@ -17,6 +17,6 @@ CUDA_VISIBLE_DEVICES=0 torchrun --master_port 18102 test_any_image_pose.py \
 --local_log_dir ./tiktok_test_log/tb_log/$imagename/$posepath/log \
 --image_pretrain_dir ./pretrained_weights/model_state-110000.th \
 --local_pose_path ./example_data/pose_sequence/$posepath \
---local_cond_image_path ./example_data/image/out-of-domain/$imagename.png \
+--local_cond_image_path ./example_data/image/out_of_domain/$imagename.png \
 $@
 
