@@ -115,11 +115,11 @@ bash scripts/appearance_disentangle_pose_control.sh
 
 
 ### Multi-GPU training:
-We have already implemented DistributedDataParallel in the python training script. If you want to use multi gpu instead of the first gpu on your machine for traning, see the following script for an example:
+We have already implemented DistributedDataParallel in the python script. If you want to use multi-gpu instead of the first gpu on your machine for training, see the following script for an example:
 ```bash
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 torchrun --master_port 10000 --nproc_per_node 8 train_tiktok.py \
 ```
-This will use 8 GPUs and run 8 processes(nproc_per_node=8) for training.
+This will use 8 GPUs and run 8 processes(nproc_per_node=8).
 
 ## Using your own video data for training 
 For training on your own dataset, you first need to run [openpose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) for your input images/videos and save the visualized pose map. Then, organize them as the format shown in the TikTok dataset. You can also refer to [ControlNet-OpenPose](https://github.com/lllyasviel/ControlNet-v1-1-nightly?tab=readme-ov-file#controlnet-11-openpose), we use exactly the same Pose ControlNet in our pipeline.
