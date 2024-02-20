@@ -180,6 +180,6 @@ test_sd_sampling/
 onnx/
 test_results/
 
-pretrained_weights/
+
 tiktok_test_log/
 tiktok_train_log/
