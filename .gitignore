@@ -1,5 +1,6 @@
 assets
 # dall-e generation outputs
+outputs/
 *.pt
 cache
 data/coco2014_val3w_images
