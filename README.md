@@ -116,7 +116,9 @@ bash scripts/appearance_disentangle_pose_control.sh
 
 ### Multi-GPU training:
 We have already implemented DistributedDataParallel in the python training script. If you want to use multi gpu instead of the first gpu on your machine for traning, see the following script for an example:
+
 `CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 torchrun --master_port 10000 --nproc_per_node 8 train_tiktok.py \`
+
 This will use 8 GPUs and run 8 processes(nproc_per_node=8) for training.
 
 ## Using your own video data for training 
