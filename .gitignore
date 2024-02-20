@@ -1,6 +1,5 @@
 assets
 # dall-e generation outputs
-outputs/
 *.pt
 cache
 data/coco2014_val3w_images
@@ -25,7 +24,6 @@ vae_models/*vqgan
 
 # log files
 log/*.log
-out*
 test_results
 err*
 
