@@ -41,7 +41,7 @@
 </div>
 
 ## News
-* **[2024.02.15]** Update multi-gpu training, dataloader, and instructions for training on your own data. 
+* **[2024.02.21]** Update multi-gpu training, dataloader, and instructions for training on your own data. 
 * **[2024.02.15]** Release training and inference code. 
 * **[2024.02.02]** Release updated paper - MagicPose. The method and data are exactly the same.
 * **[2023.11.18]** Release MagicDance paper and project page.
