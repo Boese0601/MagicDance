@@ -285,13 +285,13 @@ def init_ds(train_data_path, train_pose_path, *args, **kwargs):
 
 
 def tiktok_video_arnold(**kwargs):
-    train_data_path = "/home/dchang/MagicDance/TikTok-v4/train_set"
-    train_pose_path = "/home/dchang/MagicDance/TikTok-v4/pose_map_train_set"
+    train_data_path = "./TikTok-v4/train_set"
+    train_pose_path = "./TikTok-v4/pose_map_train_set"
     return init_ds(train_data_path, train_pose_path, with_pose=True, **kwargs)
 
 
 def tiktok_video_arnold_val(**kwargs):
-    data_path = "/home/dchang/MagicDance/TikTok-v4/disco_test_set"
-    pose_path = "/home/dchang/MagicDance/TikTok-v4/pose_map_disco_test_set"
+    data_path = "./TikTok-v4/disco_test_set"
+    pose_path = "./TikTok-v4/pose_map_disco_test_set"
     return init_ds(data_path, pose_path, with_pose=True, **kwargs)
 
