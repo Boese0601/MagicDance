@@ -1210,6 +1210,7 @@ def main(args):
         # Foward
         model.train()
         with torch.cuda.amp.autocast(enabled=args.use_fp16, dtype=FP16_DTYPE):
+            # pdb.set_trace()
             loss, loss_dict = model(x, cond)
             loss_list.append(loss.item())
             if args.gradient_accumulation_steps > 1:
