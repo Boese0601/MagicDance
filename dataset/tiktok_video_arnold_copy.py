@@ -122,12 +122,12 @@ class ImageTextControlDataset(IterableDataset): # pytorch rather than KV, replac
         self.pose_transform = pose_transform
         self.without_face_prob = 0.2
         self.without_hand_prob = 0.5
+        self.all_subjects = sorted(os.listdir(self.data_path))
         print(f"Creating ImageTextControlDataset rank={rank} world_size={world_size} data_path={data_path}")
 
     def __iter__(self):
-        all_subjects = os.listdir(self.data_path)
-        all_subjects.sort()
-        
+        all_subjects = self.all_subjects
+        random.shuffle(all_subjects)
         for subject_folder in all_subjects: 
             state = torch.get_rng_state()
             torch.set_rng_state(state)
@@ -140,8 +140,8 @@ class ImageTextControlDataset(IterableDataset): # pytorch rather than KV, replac
                     subject_pose_maps = os.listdir(subject_pose_path)
                     subject_pose_maps.sort()
                     
-                    if len(subject_folder_images) == 0 or len(subject_pose_maps) == 0: # empty folder
-                        print("empty source folder detected")
+                    if len(subject_folder_images) == 0 or len(subject_folder_images) == 1 or len(subject_pose_maps) == 0 or len(subject_pose_maps) == 1: # empty folder
+                        print("empty source folder or folder with only one image detected")
                         continue
                     rand_int = torch.randint(low=0,high=len(subject_folder_images),size=(2,))
                     condition_int = rand_int[0].item()
@@ -285,13 +285,13 @@ def init_ds(train_data_path, train_pose_path, *args, **kwargs):
 
 
 def tiktok_video_arnold(**kwargs):
-    train_data_path = "./TikTok-v4/train_set"
-    train_pose_path = "./TikTok-v4/pose_map_train_set"
+    train_data_path = "/home/dchang/MagicDance/TikTok-v4/train_set"
+    train_pose_path = "/home/dchang/MagicDance/TikTok-v4/pose_map_train_set"
     return init_ds(train_data_path, train_pose_path, with_pose=True, **kwargs)
 
 
 def tiktok_video_arnold_val(**kwargs):
-    data_path = "./TikTok-v4/disco_test_set"
-    pose_path = "./TikTok-v4/pose_map_disco_test_set"
+    data_path = "/home/dchang/MagicDance/TikTok-v4/disco_test_set"
+    pose_path = "/home/dchang/MagicDance/TikTok-v4/pose_map_disco_test_set"
     return init_ds(data_path, pose_path, with_pose=True, **kwargs)
 

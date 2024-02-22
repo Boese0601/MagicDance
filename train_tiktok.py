@@ -1128,6 +1128,7 @@ def main(args):
     image_dataloader = DataLoader(image_dataset, 
                                   batch_size=args.train_batch_size,
                                   num_workers=args.num_workers,
+                                  drop_last=True,
                                   pin_memory=True)
     image_dataloader_iter = iter(image_dataloader)
 
@@ -1209,7 +1210,6 @@ def main(args):
         # Foward
         model.train()
         with torch.cuda.amp.autocast(enabled=args.use_fp16, dtype=FP16_DTYPE):
-            # pdb.set_trace()
             loss, loss_dict = model(x, cond)
             loss_list.append(loss.item())
             if args.gradient_accumulation_steps > 1:
