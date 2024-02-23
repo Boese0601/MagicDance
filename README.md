@@ -81,7 +81,7 @@ conda activate magicpose
 ```
 
 ## Inference 
-Inference on the test set:
+### Inference on the test set:
 ```bash
 bash scripts/inference_tiktok_dataset.sh
 ```
@@ -89,8 +89,9 @@ We use exactly same code from [DisCo](https://github.com/Wangt-CN/DisCo) for met
 <div align="center">
   <img src="./figures/tiktok.png" alt="MagicDance: Realistic Human Dance Video Generation with Motions & Facial Expressions Transfer">
 </div>
+<br>
 
-Inference with specific image and pose sequence:
+### Inference with specific image and pose sequence:
 ```bash
 bash scripts/inference_any_image_pose.sh
 ```
