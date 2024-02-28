@@ -37,13 +37,10 @@
   </p>
     </p>
 
-
-<video width="320" height="240" controls>
-  <source src="./figures/1.mp4" type="video/mp4">
-</video>
-<video width="320" height="240" controls>
-  <source src="./figures/2.mp4" type="video/mp4">
-</video>
+<table align="center">
+    <img src="./figures/1.gif">
+    <img src="./figures/2.gif">
+</table>
 
 
 ## News
