@@ -35,12 +35,13 @@
         <a href='https://youtu.be/VPJe6TyrT-Y'>
         <img src='https://img.shields.io/badge/YouTube-MagicDance-rgb(255, 0, 0)' alt='Youtube'></a>
   </p>
-    </p>
+  <table align="center">
+      <img src="./figures/1.gif">
+      <img src="./figures/2.gif">
+  </table>
+</p>
 
-<table align="center">
-    <img src="./figures/1.gif">
-    <img src="./figures/2.gif">
-</table>
+
 
 GT        Pose      TPS      Disco     MagicDance     
 
