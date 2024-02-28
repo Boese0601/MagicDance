@@ -39,8 +39,8 @@
         <img src="./figures/1.gif">
         <img src="./figures/2.gif">
     </table>
-    <p align="center">
-         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  GT   Pose  TPS    Disco    MagicDance ;
+    <p>
+         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  GT   Pose  TPS    Disco    MagicDance
 
   </p>
 </p>
