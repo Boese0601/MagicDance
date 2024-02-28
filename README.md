@@ -40,7 +40,7 @@
         <img src="./figures/2.gif">
     </table>
     <p align="center">
-          GT Pose TPS Disco MagicDance
+          GT Pose TPS             Disco                 MagicDance
 
   </p>
 </p>
