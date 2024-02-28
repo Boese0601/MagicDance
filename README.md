@@ -39,11 +39,12 @@
         <img src="./figures/1.gif">
         <img src="./figures/2.gif">
     </table>
-            <span style="display: inline-block;width: 14.9%;">GT</span>
-            <span style="display: inline-block;width: 23.9%;">Pose</span>
-            <span style="display: inline-block;width: 18.9%;">TPS</span>
-            <span style="display: inline-block;width: 18.9%;">Disco</span>
-            <span style="display: inline-block;width: 19.9%;">MagicDance</span>
+    <p align="center">
+          <span style="display: inline-block;width: 14.9%;">GT</span>
+          <span style="display: inline-block;width: 23.9%;">Pose</span>
+          <span style="display: inline-block;width: 18.9%;">TPS</span>
+          <span style="display: inline-block;width: 18.9%;">Disco</span>
+          <span style="display: inline-block;width: 19.9%;">MagicDance</span></p>
 
   </p>
 </p>
