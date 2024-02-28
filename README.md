@@ -36,15 +36,16 @@
         <img src='https://img.shields.io/badge/YouTube-MagicDance-rgb(255, 0, 0)' alt='Youtube'></a>
   </p>
     </p>
-<!-- <div align="center">
-  <a href="https://youtu.be/VPJe6TyrT-Y"><img src="./figures/video_play.png" alt="MagicDance: Realistic Human Dance Video Generation with Motions & Facial Expressions Transfer"></a>
-</div> -->
+
+
 <video width="320" height="240" controls>
   <source src="./figures/1.mp4" type="video/mp4">
 </video>
 <video width="320" height="240" controls>
   <source src="./figures/2.mp4" type="video/mp4">
 </video>
+
+
 ## News
 * **[2024.02.21]** Update multi-gpu training, dataloader, and instructions for training on your own data. 
 * **[2024.02.15]** Release training and inference code. 
