@@ -40,7 +40,7 @@
         <img src="./figures/2.gif">
     </table>
     <p align="center">
-          GT  &nbsp; &nbsp; &nbsp; &nbsp; Pose &nbsp; &nbsp; &nbsp; &nbsp; TPS       &nbsp; &nbsp; &nbsp; &nbsp;      Disco       &nbsp; &nbsp; &nbsp; &nbsp;     MagicDance
+          GT  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; Pose &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; TPS   &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;    &nbsp; &nbsp; &nbsp; &nbsp;      Disco   &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;    &nbsp; &nbsp; &nbsp; &nbsp;     MagicDance
 
   </p>
 </p>
