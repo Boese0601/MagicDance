@@ -41,7 +41,13 @@
     <img src="./figures/1.gif">
     <img src="./figures/2.gif">
 </table>
-
+<p><center>
+          <span style="display: inline-block;width: 14.9%;">GT</span>
+          <span style="display: inline-block;width: 23.9%;">Pose</span>
+          <span style="display: inline-block;width: 18.9%;">TPS</span>
+          <span style="display: inline-block;width: 18.9%;">Disco</span>
+          <span style="display: inline-block;width: 19.9%;">MagicDance</span></center>
+</p>
 
 ## News
 * **[2024.02.21]** Update multi-gpu training, dataloader, and instructions for training on your own data. 
