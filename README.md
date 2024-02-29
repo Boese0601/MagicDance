@@ -81,6 +81,19 @@ The environment from my machine is `python==3.9`, `pytorch==1.13.1`, `CUDA==11.7
 conda env create -f environment.yaml
 conda activate magicpose
 ```
+### Inference with your own image and pose sequence:
+```bash
+bash scripts/inference_any_image_pose.sh
+```
+We offer some images and poses in "example_data", you can easily inference with your own image or pose sequence by replacing the arguments "local_cond_image_path" and "local_pose_path" in inference_any_image_pose.sh. Some interesting outputs from out-of-domain images are shown below:
+<div align="center">
+  <img src="./figures/zeroshot_1.png" alt="MagicDance: Realistic Human Dance Video Generation with Motions & Facial Expressions Transfer">
+</div>
+Our model is also able to retarget the pose of generated image from T2I model.
+<div align="center">
+  <img src="./figures/zeroshot_2.png" alt="MagicDance: Realistic Human Dance Video Generation with Motions & Facial Expressions Transfer">
+</div>
+
 
 ## Inference 
 ### Inference on the test set:
@@ -93,18 +106,7 @@ We use exactly same code from [DisCo](https://github.com/Wangt-CN/DisCo) for met
 </div>
 <br>
 
-### Inference with specific image and pose sequence:
-```bash
-bash scripts/inference_any_image_pose.sh
-```
-We offer some images and poses in "example_data", you can easily inference with your own image or pose sequence by replacing the arguments "local_cond_image_path" and "local_pose_path" in inference_any_image_pose.sh. Some interesting outputs from out-of-domain images are shown below:
-<div align="center">
-  <img src="./figures/zeroshot_1.png" alt="MagicDance: Realistic Human Dance Video Generation with Motions & Facial Expressions Transfer">
-</div>
-Our model is also able to retarget the pose of generated image from T2I model.
-<div align="center">
-  <img src="./figures/zeroshot_2.png" alt="MagicDance: Realistic Human Dance Video Generation with Motions & Facial Expressions Transfer">
-</div>
+
 
 ## Training
 Appearance Control Pretraining:
