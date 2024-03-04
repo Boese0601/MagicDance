@@ -2,7 +2,7 @@ CUDA_VISIBLE_DEVICES=0 torchrun --master_port 10000 train_tiktok.py \
 --model_config model_lib/ControlNet/models/cldm_v15_reference_only_pose.yaml \
 --init_path ./pretrained_weights/control_sd15_ini.ckpt \
 --output_dir ./tiktok_train_log/magicdance \
---train_batch_size 1 \
+--train_batch_size 8 \
 --num_workers 1 \
 --control_mode controlnet_important \
 --img_bin_limit 29 \
