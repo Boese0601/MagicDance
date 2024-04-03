@@ -55,6 +55,25 @@
 * [Disco](https://arxiv.org/abs/2307.00040), from Microsoft
 * [MagicAnimate](https://arxiv.org/abs/2311.16498), from ByteDance - Singapore
 
+## Comparison to Concurrent Works
+### Comparison to Animate Anyone
+<p align="center">
+    <table align="center">
+        <img src="./figures/Comparison_Animate_Anyone.gif">
+    </table>
+</p>
+
+### Comparison to MagicAnimate
+Qualitative comparison of MagicPose to MagicAnimate on Facial Exppression Editing. MagicAnimate fails to generate diverse facial expressions while MagicPose is able to.
+<div align="center">
+  <img src="./figures/magicanimate_1.png" alt="MagicDance: Realistic Human Dance Video Generation with Motions & Facial Expressions Transfer">
+</div>
+
+Qualitative comparison of MagicPose to MagicAnimate on in-the-wild pose retargeting. MagicAnimate fails to generate back of the human subject while MagicPose is able to.
+<div align="center">
+  <img src="./figures/magicanimate_2.png" alt="MagicDance: Realistic Human Dance Video Generation with Motions & Facial Expressions Transfer">
+</div>
+
 ## Getting Started 
 For inference on TikTok dataset or your own image and poses, download our MagicDance [checkpoint](https://drive.google.com/drive/folders/1Ny5zkgo3aLVekCJTAga-D_XlMGpR1cj2?usp=sharing).
 
