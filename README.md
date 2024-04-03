@@ -64,16 +64,17 @@
 </p>
 
 ### Comparison to MagicAnimate
-Qualitative comparison of MagicPose to MagicAnimate on Facial Exppression Editing. MagicAnimate fails to generate diverse facial expressions while MagicPose is able to.
+Comparison of MagicPose to MagicAnimate on Facial Expression Editing. MagicAnimate fails to generate diverse facial expressions, while MagicPose is able to.
 <div align="center">
   <img src="./figures/magicanimate_1.png" alt="MagicDance: Realistic Human Dance Video Generation with Motions & Facial Expressions Transfer">
 </div>
-
-Qualitative comparison of MagicPose to MagicAnimate on in-the-wild pose retargeting. MagicAnimate fails to generate back of the human subject while MagicPose is able to.
+<br>
+<br>
+Comparison of MagicPose to MagicAnimate on in-the-wild pose retargeting. MagicAnimate fails to generate the back of the human subject, while MagicPose is able to.
 <div align="center">
   <img src="./figures/magicanimate_2.png" alt="MagicDance: Realistic Human Dance Video Generation with Motions & Facial Expressions Transfer">
 </div>
-
+<br>
 ## Getting Started 
 For inference on TikTok dataset or your own image and poses, download our MagicDance [checkpoint](https://drive.google.com/drive/folders/1Ny5zkgo3aLVekCJTAga-D_XlMGpR1cj2?usp=sharing).
 
