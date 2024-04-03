@@ -2,8 +2,7 @@
 
 <p align="center">
 
-  <h2 align="center">MagicDance: Realistic Human Dance Video Generation<br>
-  with Motions & Facial Expressions Transfer</h2>
+  <h2 align="center">MagicPose: Realistic Human Poses and Facial Expressions Retargeting with Identity-aware Diffusion</h2>
   <p align="center">
     <a href="https://boese0601.github.io/"><strong>Di Chang</strong></a><sup>1</sup>
     ·  
@@ -18,6 +17,8 @@
     <br><a href="https://guoxiansong.github.io/homepage/index.html"><strong>Guoxian Song</strong></a><sup>2</sup>
     ·  
     <a href="https://scholar.google.com/citations?user=0TIYjPAAAAAJ&hl=en"><strong>Qing Yan</strong></a><sup>2</sup>
+    ·
+    <a href="https://scholar.google.com/citations?user=hPXUR0cAAAAJ&hl=en"><strong>Yizhe Zhu</strong></a><sup>2</sup>
     ·
     <a href="https://scholar.google.com/citations?user=_MAKSLkAAAAJ&hl=en"><strong>Xiao Yang</strong></a><sup>2</sup>
     ·
