@@ -2,7 +2,7 @@
 
 <p align="center">
 
-  <h2 align="center">MagicPose: Realistic Human Poses and Facial Expressions Retargeting with Identity-aware Diffusion</h2>
+  <h2 align="center">MagicPose: Realistic Human Poses <br> and Facial Expressions Retargeting with Identity-aware Diffusion</h2>
   <p align="center">
     <a href="https://boese0601.github.io/"><strong>Di Chang</strong></a><sup>1</sup>
     ·  
