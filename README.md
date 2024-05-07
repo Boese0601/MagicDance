@@ -29,12 +29,12 @@
     <br>
     </br>
         <a href="https://arxiv.org/abs/2311.12052">
-        <img src='https://img.shields.io/badge/arXiv-MagicDance-green' alt='Paper PDF'>
+        <img src='https://img.shields.io/badge/arXiv-MagicPose-green' alt='Paper PDF'>
         </a>
         <a href='https://boese0601.github.io/magicdance/'>
-        <img src='https://img.shields.io/badge/Project_Page-MagicDance-blue' alt='Project Page'></a>
+        <img src='https://img.shields.io/badge/Project_Page-MagicPose-blue' alt='Project Page'></a>
         <a href='https://youtu.be/VPJe6TyrT-Y'>
-        <img src='https://img.shields.io/badge/YouTube-MagicDance-rgb(255, 0, 0)' alt='Youtube'></a>
+        <img src='https://img.shields.io/badge/YouTube-MagicPose-rgb(255, 0, 0)' alt='Youtube'></a>
      </br>
     <table align="center">
         <img src="./figures/1.gif">
