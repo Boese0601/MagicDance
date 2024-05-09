@@ -10,9 +10,9 @@
     ·
     <a href="https://zerg-overmind.github.io/"><strong>Quankai Gao</strong></a><sup>1</sup>
     ·
-    <a href="https://www.linkedin.com/in/jessica-fu-60a504254/"><strong>Jessica Fu</strong></a><sup>1</sup>
-    ·
     <a href="https://hongyixu37.github.io/homepage/"><strong>Hongyi Xu</strong></a><sup>2</sup>
+    ·
+    <a href="https://www.linkedin.com/in/jessica-fu-60a504254/"><strong>Jessica Fu</strong></a><sup>1</sup>
     ·
     <br><a href="https://guoxiansong.github.io/homepage/index.html"><strong>Guoxian Song</strong></a><sup>2</sup>
     ·  
