@@ -214,6 +214,10 @@ If you find our work useful, please consider citing:
 }
 ```
 
+## License
+
+Our code is distributed under the USC research license. See `LICENSE.txt` file for more information.
+
 
 ## Acknowledgments
 This work was sponsored by the Army Research Office and was accomplished under Cooperative Agreement Number W911NF-20-2-0053. The views and conclusions contained in this document are those of the authors and should not be interpreted as representing the official policies, either expressed or implied, of the Army Research Office or the U.S. Government. The U.S. Government is authorized to reproduce and distribute reprints for Government purposes notwithstanding any copyright notation herein.
