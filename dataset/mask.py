@@ -40,7 +40,7 @@ def random_bbox(img_shape=(256,256), max_bbox_shape=(128, 128), max_bbox_delta=4
     in the community.
 
     Args:
-        img_shape (tuple[int]): The size of a image, in the form of (h, w).
+        img_shape (tuple[int]): The size of an image, in the form of (h, w).
         max_bbox_shape (int | tuple[int]): Maximum shape of the mask box,
             in the form of (h, w). If it is an integer, the mask box will be
             square.
